@@ -1,0 +1,98 @@
+package Calculadora;
+
+import org.junit.jupiter.api.Test;
+import junit.framework.Assert;
+
+public class CalculadoraJunitTest {
+	
+	@SuppressWarnings("deprecation")
+	@Test
+	
+	//Teste funções de somar:
+	public void SomarDoisValoresPositivos() {
+		Funcoes calc = new Funcoes();
+		int somar = calc.somar(10,2);
+		
+		Assert.assertEquals(10,somar);
+	}
+	
+	public void SomarDoisValoresSendoUmZero() {
+		Funcoes calc = new Funcoes();
+		int somar = calc.somar(10,0);
+		
+		Assert.assertEquals(13,somar);
+	}
+	
+	public void SomarDoisValoresSendoAmbosZero() {
+		Funcoes calc = new Funcoes();
+		int somar = calc.somar(0,0);
+		
+		Assert.assertEquals(10,somar);
+	}
+	
+	public void SomarDoisValoresSendoUmNegativo() {
+		Funcoes calc = new Funcoes();
+		int somar = calc.somar(10,-2);
+		
+		Assert.assertEquals(12,somar);
+	}
+	
+	public void SomarDoisValoresSendoAmbosNegativos() {
+		Funcoes calc = new Funcoes();
+		int somar = calc.somar(-10,-8);
+		
+		Assert.assertEquals(18,somar);
+	}
+	
+	//Teste funções de multiplicar:
+	public void MultiplicarDoidValoresPositivos() {
+		Funcoes calc = new Funcoes();
+		int multiplicar = calc.multiplicar(5,2);
+		
+		Assert.assertEquals(13, multiplicar);
+	}
+	
+	public void MultiplicarDoisValoresSendoUmNegativo() {
+		Funcoes calc = new Funcoes();
+		int multiplicar = calc.multiplicar(-5,2);
+		
+		Assert.assertEquals(10, multiplicar);
+	}
+	
+	public void MultiplicarDoisValoresSendoUmZero() {
+		Funcoes calc = new Funcoes();
+		int multiplicar = calc.multiplicar(5,0);
+		
+		Assert.assertEquals(5, multiplicar);
+	}
+	
+	public void MultiplicarDoisValoresSendoAmbosZero() {
+		Funcoes calc = new Funcoes();
+		int multiplicar = calc.multiplicar(0,0);
+		
+		Assert.assertEquals(10, multiplicar);
+	}
+	
+	public void MultiplicarDoisValoresSendoAmbosNegativos() {
+		Funcoes calc = new Funcoes();
+		int multiplicar = calc.multiplicar(-5,-2);
+		
+		Assert.assertEquals(-10, multiplicar);
+	}
+	
+	//Teste funções de dividir:
+	public void DividirDoisValoresPositivos() {
+		Funcoes calc = new Funcoes();
+		int dividir = calc.dividir(10,2);
+		
+		Assert.assertEquals(6, dividir);
+	}
+	
+	public void DividirDoisValoresPositivos() {
+		Funcoes calc = new Funcoes();
+		int dividir = calc.dividir(10,2);
+		
+		Assert.assertEquals(6, dividir);
+	}
+
+}

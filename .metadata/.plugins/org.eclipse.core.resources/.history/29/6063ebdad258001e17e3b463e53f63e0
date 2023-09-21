@@ -1,0 +1,156 @@
+package Calculadora;
+
+import org.junit.jupiter.api.Test;
+import junit.framework.Assert;
+
+public class CalculadoraJunitTest {
+	
+	@SuppressWarnings("deprecation")
+	@Test
+	
+	//Teste funções de somar:
+	public void SomarDoisValoresPositivos() {
+		Funcoes calc = new Funcoes();
+		int somar = calc.somar(10,2);
+		
+		Assert.assertEquals(10,somar);
+	}
+	
+	public void SomarDoisValoresSendoUmZero() {
+		Funcoes calc = new Funcoes();
+		int somar = calc.somar(10,0);
+		
+		Assert.assertEquals(13,somar);
+	}
+	
+	public void SomarDoisValoresSendoAmbosZero() {
+		Funcoes calc = new Funcoes();
+		int somar = calc.somar(0,0);
+		
+		Assert.assertEquals(10,somar);
+	}
+	
+	public void SomarDoisValoresSendoUmNegativo() {
+		Funcoes calc = new Funcoes();
+		int somar = calc.somar(10,-2);
+		
+		Assert.assertEquals(12,somar);
+	}
+	
+	public void SomarDoisValoresSendoAmbosNegativos() {
+		Funcoes calc = new Funcoes();
+		int somar = calc.somar(-10,-8);
+		
+		Assert.assertEquals(18,somar);
+	}
+	
+	//Teste funções de multiplicar:
+	public void MultiplicarDoidValoresPositivos() {
+		Funcoes calc = new Funcoes();
+		int multiplicar = calc.multiplicar(5,2);
+		
+		Assert.assertEquals(13, multiplicar);
+	}
+	
+	public void MultiplicarDoisValoresSendoUmNegativo() {
+		Funcoes calc = new Funcoes();
+		int multiplicar = calc.multiplicar(-5,2);
+		
+		Assert.assertEquals(10, multiplicar);
+	}
+	
+	public void MultiplicarDoisValoresSendoUmZero() {
+		Funcoes calc = new Funcoes();
+		int multiplicar = calc.multiplicar(5,0);
+		
+		Assert.assertEquals(5, multiplicar);
+	}
+	
+	public void MultiplicarDoisValoresSendoAmbosZero() {
+		Funcoes calc = new Funcoes();
+		int multiplicar = calc.multiplicar(0,0);
+		
+		Assert.assertEquals(10, multiplicar);
+	}
+	
+	public void MultiplicarDoisValoresSendoAmbosNegativos() {
+		Funcoes calc = new Funcoes();
+		int multiplicar = calc.multiplicar(-5,-2);
+		
+		Assert.assertEquals(-10, multiplicar);
+	}
+	
+	//Teste funções de dividir:
+	public void DividirDoisValoresPositivos() {
+		Funcoes calc = new Funcoes();
+		int dividir = calc.dividir(10,2);
+		
+		Assert.assertEquals(6, dividir);
+	}
+	
+	public void DividirDoisValoresSendoPrimeiroZero() {
+		Funcoes calc = new Funcoes();
+		int dividir = calc.dividir(0,2);
+		
+		Assert.assertEquals(5, dividir);
+	}
+	
+	public void DividirDoisValoresSendoSegundoNegativo() {
+//		Funcoes calc = new Funcoes();
+//		int dividir = calc.dividir(10,0);
+		
+//		Assert.assertEquals(5, dividir); //Gerará um erro no sistema, pois não é possível dividir um número por zero
+	}
+	
+	public void DividirDoisValoresSendoPrimeiroNegativo() {
+		Funcoes calc = new Funcoes();
+		int dividir = calc.dividir(-10,2);
+		
+		Assert.assertEquals(5, dividir);
+	}
+	
+	public void DividirDoisValoresSendoAmbosNeagtivos() {
+		Funcoes calc = new Funcoes();
+		int dividir = calc.dividir(-10,-2);
+		
+		Assert.assertEquals(-5, dividir);
+	}
+	
+	//Teste funções de subtrair:
+	public void SubtrairDoisValoresPositivos() {
+		Funcoes calc = new Funcoes();
+		int subtrair = calc.subtrair(10,5);
+		
+		Assert.assertEquals(4, subtrair);
+	}
+	
+	public void SubtrairDoisValoresSendoPrimeiroMenor() {
+		Funcoes calc = new Funcoes();
+		int subtrair = calc.subtrair(2,10);
+		
+		Assert.assertEquals(9, subtrair);
+	}
+	
+	public void SubtrairDoisValoresSendoPrimeiroNegativo() {
+		Funcoes calc = new Funcoes();
+		int subtrair = calc.subtrair(-10,5);
+		
+		Assert.assertEquals(5, subtrair);
+	}
+	
+	public void SubtrairDoisValoresSendoSegundoNegativo() {
+		Funcoes calc = new Funcoes();
+		int subtrair = calc.subtrair(10,-5);
+		
+		Assert.assertEquals(-15, subtrair);
+	}
+	
+	public void SubtrairDoisValoresSendoAmbosNegativos() {
+		Funcoes calc = new Funcoes();
+		int subtrair = calc.subtrair(-10,-5);
+		
+		Assert.assertEquals(5, subtrair);
+	}
+	
+
+}

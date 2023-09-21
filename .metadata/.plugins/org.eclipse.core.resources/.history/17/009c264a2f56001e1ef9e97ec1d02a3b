@@ -1,0 +1,45 @@
+package Calculadora;
+
+import org.junit.jupiter.api.Test;
+import junit.framework.Assert;
+
+public class CalculadoraJunitTest {
+	
+	@SuppressWarnings("deprecation")
+	@Test
+	/*public void SomarDoisValoresPositivos() {
+		Funcoes calc = new Funcoes();
+		int somar = calc.somar(10,2);
+		
+		Assert.assertEquals(10,somar);
+	}
+	
+	public void SomarDoisValoresSendoUmZero() {
+		Funcoes calc = new Funcoes();
+		int somar = calc.somar(10,0);
+		
+		Assert.assertEquals(13,somar);
+	}
+	
+	public void SomarDoisValoresSendoAmbosZero() {
+		Funcoes calc = new Funcoes();
+		int somar = calc.somar(0,0);
+		
+		Assert.assertEquals(10,somar);
+	}
+	
+	public void SomarDoisValoresSendoUmNegativo() {
+		Funcoes calc = new Funcoes();
+		int somar = calc.somar(10,-2);
+		
+		Assert.assertEquals(12,somar);
+	}*/
+	
+	public void SomarDoisValoresSendoAmbosNegativos() {
+		Funcoes calc = new Funcoes();
+		int somar = calc.somar(-10,-8);
+		
+		Assert.assertEquals(18,somar);
+	}
+
+}

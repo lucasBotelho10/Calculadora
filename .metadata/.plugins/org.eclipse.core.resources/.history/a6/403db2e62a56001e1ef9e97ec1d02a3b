@@ -1,0 +1,17 @@
+package Calculadora;
+
+import org.junit.jupiter.api.Test;
+import junit.framework.Assert;
+
+public class CalculadoraJunitTest {
+	
+	@SuppressWarnings("deprecation")
+	@Test
+	public void SomarDoisValoresPositivos() {
+		Funcoes calc = new Funcoes();
+		int somar = calc.somar(10,2);
+		
+		Assert.assertEquals(12,somar);
+	}
+
+}

@@ -1,24 +1,24 @@
 package Calculadora;
 
 public class Funcoes {
- //funÃ§Ãµes: 
+ //funções: 
     
-    //FunÃ§Ã£o de soma:
+    //Função de soma:
     public int somar(int a, int b){
         return a + b;
     }
     
-    //FunÃ§Ã£o de subtraÃ§Ã£o:
+    //Função de subtraÃ§Ã£o:
     public int subtrair(int a, int b){
         return a - b;
     }
     
-    //FunÃ§Ã£o de divisÃ£o:
+    //Função de divisÃ£o:
     public int dividir(int a, int b){
         return a / b;
     }
     
-    //FunÃ§Ã£o de multiplicaÃ§Ã£o
+    //Função de multiplicaÃ§Ã£o
     public int multiplicar(int a, int b){
         return a * b;
  }

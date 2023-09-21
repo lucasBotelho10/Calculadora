@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="CalculadoraJunitTest" project="QualidadeTesteSoftware" tests="1" started="1" failures="0" errors="1" ignored="0">
+  <testsuite name="Calculadora.CalculadoraJunitTest" time="0.024" displayname="CalculadoraJunitTest" uniqueid="[engine:junit-jupiter]/[class:Calculadora.CalculadoraJunitTest]">
+    <testcase name="DividirDoisValoresSendoSegundoNegativo" classname="Calculadora.CalculadoraJunitTest" time="0.024" displayname="DividirDoisValoresSendoSegundoNegativo()" uniqueid="[engine:junit-jupiter]/[class:Calculadora.CalculadoraJunitTest]/[method:DividirDoisValoresSendoSegundoNegativo()]">
+      <error>java.lang.ArithmeticException: / by zero&#13;
+	at Calculadora.Funcoes.dividir(Funcoes.java:18)&#13;
+	at Calculadora.CalculadoraJunitTest.DividirDoisValoresSendoSegundoNegativo(CalculadoraJunitTest.java:108)&#13;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+&#13;
+</error>
+    </testcase>
+  </testsuite>
+</testrun>

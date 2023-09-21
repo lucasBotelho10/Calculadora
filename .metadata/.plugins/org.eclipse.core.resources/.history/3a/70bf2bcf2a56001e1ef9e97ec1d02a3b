@@ -1,0 +1,13 @@
+package Calculadora;
+
+import org.junit.jupiter.api.Test;
+
+public class CalculadoraJunitTest {
+	
+	@Test
+	public void SomarDoisValoresPositivos() {
+		Funcoes calc = new Funcoes();
+		int somar = calc.somar(10,2);
+	}
+
+}
