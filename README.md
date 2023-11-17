@@ -5,7 +5,7 @@
  - O projeto é útil para fazer contas básicas e simples com números inteiros.
  - Os usuários podem utlizar essa calculadora fazendo testes com dois números inteiros, assim ele pode realizar a função que desejar.
 
-## Mecânicas dos teste Junit
+## Mecânicas dos testes Junit
  - Para realizar um teste é necessário declarar um objeto que recebe as funções da calculadora e utilizar o Assert.assertEquals() que recebe dois parâmetros, o primeiro é o
    resultado que o usuário deseja que retorne e o segundo é o objeto que recebe a função que realiza o calculo e retorna o resultado, assim o Assert.assertEquals compara o
    primeiro parâmetro com o segundo e caso sejam iguais ele retorna uma resposta positiva e caso o primeiro valor não seja igual o segundo, ele mostra uma mensagem negativa e
