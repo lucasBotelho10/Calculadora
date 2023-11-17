@@ -3,7 +3,7 @@
  - O projeto calculadora possui uma classe com funções do tipo inteiro que fazem calculos matemáticos básicos, entre eles estão os de somar, multiplicar, dividir e subtrair.
  - No projeo são feitos diversos testes básicos com cada tipo de operação e teste utilizando o framework JunitTest, para teste melhores, mais explicativos e precisos.
  - O projeto é útil para fazer contas básicas e simples com números inteiros.
- - Os usuários podem utlizar essa calculadora fazendo testes com dois números innteiros, assim ele pode realizar a função que desejar.
+ - Os usuários podem utlizar essa calculadora fazendo testes com dois números inteiros, assim ele pode realizar a função que desejar.
 
 ## Mecânicas dos teste Junit
  - Para realizar um teste é necessário declarar um objeto que recebe as funções da calculadora e utilizar o Assert.assertEquals() que recebe dois parâmetros, o primeiro é o
